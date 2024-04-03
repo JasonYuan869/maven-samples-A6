@@ -10,7 +10,6 @@ pipeline {
         git(url: 'https://github.com/JasonYuan869/maven-samples-A6', branch: 'master')
       }
     }
-
     stage('run') {
       steps {
         script {
