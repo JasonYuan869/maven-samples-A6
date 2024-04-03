@@ -4,12 +4,14 @@ pipeline {
       maven 'Maven' 
       jdk 'JDK17' 
   }
+  
   stages {
     stage('check out') {
       steps {
         git(url: 'https://github.com/JasonYuan869/maven-samples-A6', branch: 'master')
       }
     }
+    
     stage('run') {
       steps {
         script {
@@ -18,5 +20,7 @@ pipeline {
         }
       }
     }
+    
   }
+  
 }
